@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Toolkit</title>
+  <link rel="stylesheet" href="colour.css">
+</head>
+<body>
+  <header>
+    <h1>AI Toolkit</h1>
+  </header>
+  
+  <main>
+    <section class="tool">
+      <h2>Fingerprint Recognition</h2>
+      <form action="/fingerprint" method="POST" enctype="multipart/form-data">
+        <input type="file" name="fingerprintImage" accept=".jpg, .png">
+        <button type="submit">Detect Fingerprint</button>
+      </form>
+      <div class="result">
+        <!-- Display fingerprint recognition result here -->
+      </div>
+    </section>
+
+    <section class="tool">
+      <h2>Face Detection</h2>
+      <form action="/face_detection" method="POST" enctype="multipart/form-data">
+        <input type="file" name="faceImage" accept=".jpg, .png">
+        <button type="submit">Detect Faces</button>
+      </form>
+      <div class="result">
+        <!-- Display face detection result here -->
+      </div>
+    </section>
+    
+    <!-- Add more sections for other tools -->
+  </main>
+
+  <footer>
+    <p>©RONY</p>
+  </footer>
+</body>
+</html>
